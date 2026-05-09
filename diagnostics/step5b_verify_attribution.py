@@ -155,7 +155,7 @@ for i, e in enumerate(ff_edges[:10]):
 # ============================================================
 # 7. Save
 # ============================================================
-save_graph(pruned, "/mnt/storage/sandeep/priyansh/Gemma-Scope-2-Study/outputs/attribution_graph_france_v2.json")
+save_graph(pruned, "/workspace/Gemma-Scope-2-Study/outputs/attribution_graph_france_v2.json")
 
 print(f"\n{'='*70}")
 print(f"GPU: {torch.cuda.memory_allocated()/(1024**3):.2f} GB allocated")

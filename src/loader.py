@@ -126,7 +126,7 @@ def _load_single_layer(
 
 def load_sae(
     layer: int,
-    site: Literal["resid_post", "mlp_out", "attn_out"] = "resid_post",
+    site: str = "resid_post",
     width: str = "65k",
     l0: str = "medium",
     variant: Literal["pt", "it"] = "pt",

@@ -151,8 +151,8 @@ for node_id, node in sorted(
 # ============================================================
 # 7. Save graph
 # ============================================================
-os.makedirs("/mnt/storage/sandeep/priyansh/Gemma-Scope-2-Study/outputs", exist_ok=True)
-save_graph(pruned, "/mnt/storage/sandeep/priyansh/Gemma-Scope-2-Study/outputs/attribution_graph_france.json")
+os.makedirs("/workspace/Gemma-Scope-2-Study/outputs", exist_ok=True)
+save_graph(pruned, "/workspace/Gemma-Scope-2-Study/outputs/attribution_graph_france.json")
 
 # ============================================================
 # 8. Second prompt: test on a different domain
@@ -187,7 +187,7 @@ for e in sorted_edges2[:5]:
     tgt_info = f"'{tgt.token_str}'" if hasattr(tgt, 'logit_value') else f"L{tgt.layer}/f{tgt.feature_idx}" if hasattr(tgt, 'layer') else e.target_id
     print(f"  {src_info} → {tgt_info}  w={e.weight:.3f}")
 
-save_graph(pruned2, "/mnt/storage/sandeep/priyansh/Gemma-Scope-2-Study/outputs/attribution_graph_apple.json")
+save_graph(pruned2, "/workspace/Gemma-Scope-2-Study/outputs/attribution_graph_apple.json")
 
 # Memory report
 print(f"\n{'='*70}")

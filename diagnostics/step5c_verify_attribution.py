@@ -227,7 +227,7 @@ for e in sorted(paris_edges, key=lambda x: abs(x.weight), reverse=True)[:10]:
     if hasattr(src, 'layer'):
         print(f"  L{src.layer:02d}/f{src.feature_idx} (act={src.activation:.0f}) → Paris  w={e.weight:.1f}")
 
-save_graph(pruned, "/mnt/storage/sandeep/priyansh/Gemma-Scope-2-Study/outputs/attribution_graph_france_v3.json")
+save_graph(pruned, "/workspace/Gemma-Scope-2-Study/outputs/attribution_graph_france_v3.json")
 
 print(f"\n{'='*70}")
 print(f"GPU: {torch.cuda.memory_allocated()/(1024**3):.2f} GB")

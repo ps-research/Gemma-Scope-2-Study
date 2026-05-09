@@ -21,7 +21,7 @@ print("=" * 70)
 print("STEP 6b: CROSS-TOOL COMPARISON (with fixes)")
 print("=" * 70)
 
-CACHE_DIR = "/mnt/storage/sandeep/priyansh/Gemma-Scope-2-Study/cache"
+CACHE_DIR = "/workspace/Gemma-Scope-2-Study/cache"
 
 model, tokenizer = load_gemma3_1b("pt", device="cuda")
 
@@ -129,7 +129,7 @@ print(f"     CLT:        262k width = 10,080 features/layer x 26 layers")
 print(f"     Single-layer: 65k width = 65,536 features (6.5x more per layer than CLT)")
 print(f"     FVU comparison is NOT apples-to-apples — report this in the paper")
 
-save_comparison(result, "/mnt/storage/sandeep/priyansh/Gemma-Scope-2-Study/outputs/comparison_france_v2.json")
+save_comparison(result, "/workspace/Gemma-Scope-2-Study/outputs/comparison_france_v2.json")
 
 print(f"\n{'='*70}")
 print(f"GPU: {torch.cuda.memory_allocated()/(1024**3):.2f} GB")

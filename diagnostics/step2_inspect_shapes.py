@@ -8,7 +8,7 @@ from safetensors.torch import load_file
 import json
 import os
 
-WORK_DIR = "/mnt/storage/sandeep/priyansh/Gemma-Scope-2-Study"
+WORK_DIR = "/workspace/Gemma-Scope-2-Study"
 os.makedirs(f"{WORK_DIR}/cache", exist_ok=True)
 
 # ============================================================

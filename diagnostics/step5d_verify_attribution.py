@@ -154,7 +154,7 @@ for mid_id in list(middle_features)[:5]:
               f" →[w={dn_e.weight:+.0f}]→"
               f" '{dn_o.token_str}'")
 
-save_graph(pruned, "/mnt/storage/sandeep/priyansh/Gemma-Scope-2-Study/outputs/attribution_graph_france_v4.json")
+save_graph(pruned, "/workspace/Gemma-Scope-2-Study/outputs/attribution_graph_france_v4.json")
 
 print(f"\n{'='*70}")
 print(f"GPU: {torch.cuda.memory_allocated()/(1024**3):.2f} GB")

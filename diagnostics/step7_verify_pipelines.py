@@ -22,8 +22,8 @@ from src.viz import (
     render_attribution_graph_text,
 )
 
-CACHE = "/mnt/storage/sandeep/priyansh/Gemma-Scope-2-Study/cache"
-OUT = "/mnt/storage/sandeep/priyansh/Gemma-Scope-2-Study/outputs"
+CACHE = "/workspace/Gemma-Scope-2-Study/cache"
+OUT = "/workspace/Gemma-Scope-2-Study/outputs"
 os.makedirs(OUT, exist_ok=True)
 
 print("=" * 70)
